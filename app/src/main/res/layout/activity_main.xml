@@ -19,6 +19,7 @@
         android:textColor="@color/colorPrimary"
         android:textSize="160sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_Toast"
         app:layout_constraintTop_toTopOf="parent" />
 
