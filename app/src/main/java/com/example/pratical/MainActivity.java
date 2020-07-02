@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     private int mCount = 0;
     private TextView mShowCount;
-
+    private  int number;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +29,13 @@ public class MainActivity extends AppCompatActivity {
         ++mCount;
         if(mShowCount !=null) {
             mShowCount.setText(Integer.toString(mCount));
-            view.setBackgroundColor(Color.GREEN);
-            findViewById(R.id.button_zero).setBackgroundColor(Color.RED);
-
+            number=mCount %2;
+            if (number ==0){
+                view.setBackgroundColor(Color.GREEN);
+            }
+            else
+                view.setBackgroundColor(Color.RED);
+            findViewById(R.id.button_zero).setBackgroundColor(Color.MAGENTA);
         }
     }
 
