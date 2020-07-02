@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     public void countZero(View view) {
         mCount=0;
         mShowCount.setText(Integer.toString(mCount));
-        findViewById(R.id.button_zero).setBackgroundColor(Color.GRAY);
+        view.setBackgroundColor(Color.GRAY);
+        findViewById(R.id.button_count).setBackgroundColor(Color.BLUE);
     }
 }
